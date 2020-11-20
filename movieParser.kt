@@ -6,7 +6,7 @@ import java.io.File
 class MovieParser {
     fun parseMovies() {
         println("\nparsing movies...")
-        
+
         var filePath = "movies/movies_metadata.csv"
         val list = arrayListOf("")
 
