@@ -3,9 +3,19 @@ package main.whattowatch
 import java.io.File
 import java.util.Arrays
 
+class Movie {
+    var title = ""
+    var language = ""
+}
+
 class MovieParser {
 
     val list = arrayListOf("")
+    val movieTitles = arrayListOf("")
+    val movieLanguages = arrayListOf("")
+    val movies = ArrayList<Movie>()
+
+    fun String.onlyLetters() = all { it.isLetter() }
 
     fun parseMovies() {
         println("\nparsing movies...")
@@ -23,18 +33,33 @@ class MovieParser {
         } finally {
             println("\n...finished parsing movies")
         }
+
+        // Do the actual parsing
+        for(m in 0 until list.size) {
+            val arr = list[m].split(",").toTypedArray()
+
+            var movie = Movie()
+
+            for(n in 0 until arr.size) {
+                // Movie Title
+                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) {
+                    movieTitles.add(arr[n+2])
+                    movie.title = arr[n+2]
+                }
+
+                // Movie Language
+                if (arr[n].length == 2 && arr[n].onlyLetters()) {
+                    movie.language = arr[n]
+                }
+            }
+            movies.add(movie)
+        }
     }
 
     // Prints each movie name
     fun printMovieNames() {
-        for(m in 0 until list.size) {
-            val arr = list[m].split(",").toTypedArray()
-
-            for(n in 0 until arr.size) {
-                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) {
-                    println(arr[n+2])
-                }
-            }
+        movieTitles.forEach {
+            t -> print("$t\n")
         }
     }
     
@@ -43,6 +68,12 @@ class MovieParser {
         // This is printing the number of commas in each movie entry
         list.forEach {
             l -> println("${l.count{ c -> c == 'a' }}")
+        }
+    }
+
+    fun printMovies() {
+        movies.forEach {
+            m -> println("Title: ${m.title}; Language: ${m.language}")
         }
     }
 }
