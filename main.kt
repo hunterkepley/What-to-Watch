@@ -5,5 +5,5 @@ fun main() {
 
     var parser = MovieParser()
     parser.parseMovies()
-    parser.printMoviesRaw()
+    parser.printMovieNames()
 }

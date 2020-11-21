@@ -1,7 +1,7 @@
 package main.whattowatch
 
 import java.io.File
-
+import java.util.Arrays
 
 class MovieParser {
 
@@ -25,18 +25,23 @@ class MovieParser {
         }
     }
 
-    fun printMoviesRaw() {
-        // This is printing the number of commas in each movie entry
-        list.forEach {
-            l -> println("$l\n\n")
-            //l -> println("${l.count{ c -> c == 'a' }}")
+    // Prints each movie name
+    fun printMovieNames() {
+        for(m in 0 until list.size) {
+            val arr = list[m].split(",").toTypedArray()
+
+            for(n in 0 until arr.size) {
+                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) {
+                    println(arr[n+2])
+                }
+            }
         }
     }
+    
 
     fun printNumCommas() {
         // This is printing the number of commas in each movie entry
         list.forEach {
-            //l -> println("$l\n\n")
             l -> println("${l.count{ c -> c == 'a' }}")
         }
     }
