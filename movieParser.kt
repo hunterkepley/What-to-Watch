@@ -7,6 +7,7 @@ class Movie {
     var title = ""
     var language = ""
     var releaseDate = ""
+    var runTime = "" // In minutes
 }
 
 class MovieParser {
@@ -45,8 +46,11 @@ class MovieParser {
                     movie.title = arr[n+2]
                 } else if (arr[n].length == 2 && arr[n].onlyLetters()) { // Language
                     movie.language = arr[n]
-                } else if (arr[n].length == 10 && arr[n].contains("-")) { // Release date
-                    movie.releaseDate = arr[n]
+                } else if (arr[n].length == 10 && arr[n].contains("-")) { // Release date & runtime
+                    movie.releaseDate = arr[n] // Release date
+                    if (arr[n+2].length <= 6) {
+                        movie.runTime = arr[n+2] // Runtime
+                    }
                 }
             }
             movies.add(movie)
@@ -70,7 +74,7 @@ class MovieParser {
 
     fun printMovies() {
         movies.forEach {
-            m -> println("Title: ${m.title}; Language: ${m.language}; Release Date: ${m.releaseDate}\n")
+            m -> println("Title: ${m.title}; Language: ${m.language}; Release Date: ${m.releaseDate}; Runtime: ${m.runTime}\n")
         }
     }
 }
