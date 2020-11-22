@@ -5,6 +5,6 @@ fun main() {
 
     var parser = MovieParser()
     parser.parseMovies() // Parses CSV into Kotlin
-    parser.printMovieNames()
+    parser.printMovieTitles()
     parser.printMovies()
 }
