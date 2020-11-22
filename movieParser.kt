@@ -6,13 +6,12 @@ import java.util.Arrays
 class Movie {
     var title = ""
     var language = ""
+    var releaseDate = ""
 }
 
 class MovieParser {
 
     val list = arrayListOf("")
-    val movieTitles = arrayListOf("")
-    val movieLanguages = arrayListOf("")
     val movies = ArrayList<Movie>()
 
     fun String.onlyLetters() = all { it.isLetter() }
@@ -41,15 +40,13 @@ class MovieParser {
             var movie = Movie()
 
             for(n in 0 until arr.size) {
-                // Movie Title
-                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) {
-                    movieTitles.add(arr[n+2])
+                
+                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) { // Title
                     movie.title = arr[n+2]
-                }
-
-                // Movie Language
-                if (arr[n].length == 2 && arr[n].onlyLetters()) {
+                } else if (arr[n].length == 2 && arr[n].onlyLetters()) { // Language
                     movie.language = arr[n]
+                } else if (arr[n].length == 10 && arr[n].contains("-")) { // Release date
+                    movie.releaseDate = arr[n]
                 }
             }
             movies.add(movie)
@@ -57,9 +54,9 @@ class MovieParser {
     }
 
     // Prints each movie name
-    fun printMovieNames() {
-        movieTitles.forEach {
-            t -> print("$t\n")
+    fun printMovieTitles() {
+        movies.forEach {
+            t -> print("${t.title}\n")
         }
     }
     
@@ -67,13 +64,13 @@ class MovieParser {
     fun printNumCommas() {
         // This is printing the number of commas in each movie entry
         list.forEach {
-            l -> println("${l.count{ c -> c == 'a' }}")
+            l -> println("${l.count{ c -> c == ',' }}")
         }
     }
 
     fun printMovies() {
         movies.forEach {
-            m -> println("Title: ${m.title}; Language: ${m.language}")
+            m -> println("Title: ${m.title}; Language: ${m.language}; Release Date: ${m.releaseDate}\n")
         }
     }
 }
