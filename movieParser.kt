@@ -7,6 +7,8 @@ class Movie {
     var title = ""
     var language = ""
     var releaseDate = ""
+    var runTime = "" // In minutes
+    var genres = ArrayList<String>()
 }
 
 class MovieParser {
@@ -39,15 +41,29 @@ class MovieParser {
 
             var movie = Movie()
 
-            for(n in 0 until arr.size) {
+            for(n in 1 until arr.size) {
                 
-                if (arr[n].contains("tt") && arr.size > n+2 && arr[n].length == 9) { // Title
+                if (arr[n].contains("tt") && arr.size > n+3 && arr[n].length == 9) { // Title
                     movie.title = arr[n+2]
                 } else if (arr[n].length == 2 && arr[n].onlyLetters()) { // Language
                     movie.language = arr[n]
-                } else if (arr[n].length == 10 && arr[n].contains("-")) { // Release date
-                    movie.releaseDate = arr[n]
+                } else if (arr[n].length == 10 && arr[n].contains("-")) { // Release date & runtime
+                    movie.releaseDate = arr[n] // Release date
+                    if (arr[n+2].length <= 6) {
+                        movie.runTime = arr[n+2] // Runtime
+                    }
+                } else if (arr[n].contains("'name': ") and arr[n-1].contains("'id'")) {
+                    var genreVal = arr[n].split(":")
+                    var genre: String
+                    if (!genreVal[1].substring(1, genreVal[1].length-1).contains(" ")) {
+                        var filters = "'\"]} "
+                        genre = genreVal[1].filterNot { filters.indexOf(it) > -1 }
+                        movie.genres.add(genre)
+                    }
                 }
+            }
+            if (movie.genres.size == 0) {
+                movie.genres.add("Unknown")
             }
             movies.add(movie)
         }
@@ -70,7 +86,7 @@ class MovieParser {
 
     fun printMovies() {
         movies.forEach {
-            m -> println("Title: ${m.title}; Language: ${m.language}; Release Date: ${m.releaseDate}\n")
+            m -> println("Title: ${m.title}; Genres: ${m.genres.joinToString()}; Language: ${m.language}; Release Date: ${m.releaseDate}; Runtime: ${m.runTime}m\n")
         }
     }
 }
