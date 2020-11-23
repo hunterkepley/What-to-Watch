@@ -12,7 +12,7 @@
 
 * Run the jar file
 
-`java -jar wtw.jar`
+`kotlin wtw.jar`
 
 ## Database used
 
