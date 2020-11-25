@@ -15,8 +15,10 @@ fun main() {
 
     var moviesWar2016 = filterer.filterByGenre(movies2016, Genre.WAR)
 
-    for (n in 0 until moviesWar2016.size) {
-        println(moviesWar2016[n].title)
+    var moviesWar2016EN = filterer.filterForeign(moviesWar2016)
+
+    for (n in 0 until moviesWar2016EN.size) {
+        println(moviesWar2016EN[n].title)
     }
 
 }

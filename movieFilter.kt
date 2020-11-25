@@ -20,6 +20,17 @@ class MovieFilter {
         return filtered
     }
 
+    fun filterForeign(movies: ArrayList<Movie>): ArrayList<Movie> {
+        val filtered = ArrayList<Movie>()
+
+        for (i in 0 until movies.size) {
+            if (movies[i].language == "en") {
+                filtered.add(movies[i])
+            }
+        }
+        return filtered
+    }
+
     fun filterByGenre(movies: ArrayList<Movie>, genre: Genre): ArrayList<Movie> {
         var genreString = ""
         val filtered = ArrayList<Movie>()
