@@ -11,8 +11,12 @@ fun main() {
     parser.printMovies()
     println("Press enter to continue...")
     readLine()
-    var movies2016 = filterer.filterByYear(parser.movies, "1999")
-    for (n in 1 until movies2016.size) {
-        println(movies2016[n].title)
+    var movies2016 = filterer.filterByYear(parser.movies, "2016")
+
+    var moviesWar2016 = filterer.filterByGenre(movies2016, Genre.WAR)
+
+    for (n in 0 until moviesWar2016.size) {
+        println(moviesWar2016[n].title)
     }
+
 }

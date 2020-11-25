@@ -52,14 +52,12 @@ class MovieParser {
                     if (arr[n+2].length <= 6) {
                         movie.runTime = arr[n+2] // Runtime
                     }
-                } else if (arr[n].contains("'name': ") and arr[n-1].contains("'id'")) {
+                } else if (arr[n].contains("'name': ") and arr[n-1].contains("'id'")) { // Genres
                     var genreVal = arr[n].split(":")
                     var genre: String
-                    if (!genreVal[1].substring(1, genreVal[1].length-1).contains(" ")) {
-                        var filters = "'\"]} "
-                        genre = genreVal[1].filterNot { filters.indexOf(it) > -1 }
-                        movie.genres.add(genre)
-                    }
+                    var filters = "'\"]} "
+                    genre = genreVal[1].filterNot { filters.indexOf(it) > -1 }
+                    movie.genres.add(genre)
                 }
             }
             if (movie.genres.size == 0) {
