@@ -32,7 +32,7 @@ class MovieParser {
         } catch(e: Exception) {
             e.printStackTrace()
         } finally {
-            println("\n...finished parsing movies")
+            println("\n...finished parsing ${list.size} movies")
         }
 
         // Do the actual parsing
