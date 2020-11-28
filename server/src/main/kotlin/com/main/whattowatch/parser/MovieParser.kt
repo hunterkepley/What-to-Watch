@@ -1,15 +1,9 @@
-package main.whattowatch
 
+package com.main.whattowatch.parser
+
+import com.main.whattowatch.models.Movie
 import java.io.File
 import java.util.Arrays
-
-class Movie {
-    var title = ""
-    var language = ""
-    var releaseDate = ""
-    var runTime = "" // In minutes
-    var genres = ArrayList<String>()
-}
 
 class MovieParser {
 

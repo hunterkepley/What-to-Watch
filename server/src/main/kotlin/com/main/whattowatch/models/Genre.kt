@@ -1,0 +1,8 @@
+package com.main.whattowatch.models
+
+enum class Genre {
+    SCIENCEFICTION, COMEDY, DOCUMENTARY,
+    DRAMA, FAMILY, ACTION, WESTERN, WAR,
+    CRIME, FANTASY, ADVENTURE, HORROR,
+    THRILLER, ROMANCE, ANIMATION
+}
