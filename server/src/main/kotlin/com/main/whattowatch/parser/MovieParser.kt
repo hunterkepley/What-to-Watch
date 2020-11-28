@@ -1,8 +1,8 @@
 package com.main.whattowatch.parser
+
 import com.main.whattowatch.models.Movie
 import java.io.File
 import java.util.Arrays
-
 
 class MovieParser {
 
