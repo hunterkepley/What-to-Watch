@@ -6,14 +6,13 @@
 
 ## How to run
 
-* Run `kotlinc` to compile:
+Download IntelliJ IDEA
 
-`kotlinc *.kt -d wtw.jar`
+Open server/ folder
 
-* Run the jar file
+Run in IntelliJ IDEA (using a regular Kotlin Build Configuration)
 
-`kotlin wtw.jar`
-
+Go to localhost:8080
 ## Database used
 
 We used Kaggle for the CSV used for the movies using a public domain CSV of movies
