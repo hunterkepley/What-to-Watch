@@ -1,20 +1,13 @@
-package main.whattowatch
-
+package com.main.whattowatch.parser
+import com.main.whattowatch.models.Movie
 import java.io.File
 import java.util.Arrays
 
-class Movie {
-    var title = ""
-    var language = ""
-    var releaseDate = ""
-    var runTime = "" // In minutes
-    var genres = ArrayList<String>()
-}
 
 class MovieParser {
 
-    val list = arrayListOf("")
-    val movies = ArrayList<Movie>()
+    private val list = arrayListOf("")
+    private val movies = ArrayList<Movie>()
 
     fun String.onlyLetters() = all { it.isLetter() }
 
@@ -26,13 +19,13 @@ class MovieParser {
         // Read movie metadata CSV and save each line in list
         try{
             var input:List<String> = File(filePath).readLines()
-            input.forEach { 
+            input.forEach {
                 l -> list.add(l)
             }
         } catch(e: Exception) {
             e.printStackTrace()
         } finally {
-            println("\n...finished parsing movies")
+            println("\n...finished parsing ${list.size} movies")
         }
 
         // Do the actual parsing
@@ -42,7 +35,7 @@ class MovieParser {
             var movie = Movie()
 
             for(n in 1 until arr.size) {
-                
+
                 if (arr[n].contains("tt") && arr.size > n+3 && arr[n].length == 9) { // Title
                     movie.title = arr[n+2]
                 } else if (arr[n].length == 2 && arr[n].onlyLetters()) { // Language
@@ -75,13 +68,16 @@ class MovieParser {
             t -> print("${t.title}\n")
         }
     }
-    
 
     fun printNumCommas() {
         // This is printing the number of commas in each movie entry
         list.forEach {
             l -> println("${l.count{ c -> c == ',' }}")
         }
+    }
+
+    fun getMovies(): ArrayList<Movie> {
+        return movies
     }
 
     fun printMovies() {
