@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>What to Watch</title>
 </head>
 <body>
-<label>Choose a genre: </label>
-<select></select>
 
-<br>
-<label>Choose a year:</label>
-<select></select>
+<h1 th:text="${title}"></h1>
 
-<br>
 
-<button>Get a Movie Name!</button>
+
+<form method="post">
+    <label>Choose a genre: </label>
+
+    <select name="selectGenre">
+        <option   th:each="genre : ${genres}" th:text="${genre}"></option>
+
+    </select>
+
+    <br><br>
+    <label>Choose a year:</label>
+    <select name="selectYear">
+        <option   th:each="year : ${years}" th:text="${year}"></option>
+
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Get a Movie Name!"></input>
+</form>
+<h1 th:text="${message}"></h1>
+<h1 th:text="${movieTitle}"></h1>
+
+
 </body>
 </html>

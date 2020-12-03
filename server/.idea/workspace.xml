@@ -8,26 +8,23 @@
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/MovieController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/MovieController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/HomeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/HomeController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/filter/MovieFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/filter/MovieFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/whattowatch.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/whattowatch.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplicationKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplicationKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter$WhenMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter$WhenMappings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/IMovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/IMovieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/MovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/MovieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/services/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/services/MovieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/whattowatch.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplicationKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/IMovieRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/MovieRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/services/MovieService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/whattowatch.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/whattowatch.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/main/whattowatch/WhattowatchApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/main/whattowatch/WhattowatchApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whattowatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/whattowatch.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/whattowatch/whattowatch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -86,7 +83,7 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.main.whattowatch.WhattowatchApplicationKt" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -95,7 +92,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -110,20 +107,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="201" y="44" width="1071" height="796" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606836620235">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="137" y="19" width="1071" height="796" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607016363091">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606827279667" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1607016363091" />
     <state x="201" y="44" width="1071" height="796" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1606836620235" />
     <state x="434" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606836618475">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1606664061878" />
     <state x="434" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1606836618475" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606826988404">
+    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1607016306832">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606826988404" />
+    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1607016306832" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607016004266">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607016004266" />
     <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1606968097836">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -164,10 +165,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="208" y="43" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1606836508691" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1606767761131">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1607015965902">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1606767761131" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1607015965902" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1606968046836">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
