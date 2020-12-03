@@ -5,6 +5,7 @@ import com.main.whattowatch.models.Genre
 
 class MovieFilter {
 
+    // Filters movies by a specific year and returns the updated ArrayList
     fun filterByYear(movies: ArrayList<Movie>, year: String): ArrayList<Movie> {
         val filtered = ArrayList<Movie>()
         for(m in 0 until movies.size) {
@@ -16,6 +17,7 @@ class MovieFilter {
         return filtered
     }
 
+    // Filters movies by English/non-English
     fun filterForeign(movies: ArrayList<Movie>): ArrayList<Movie> {
         val filtered = ArrayList<Movie>()
 
@@ -58,5 +60,11 @@ class MovieFilter {
         }
 
         return filtered
+    }
+
+    fun pickRandomMovie(movies: ArrayList<Movie>): Movie {
+        val randomMovie = (0..movies.size).random()
+
+        return movies[randomMovie]
     }
 }
