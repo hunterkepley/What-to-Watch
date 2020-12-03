@@ -1,0 +1,13 @@
+
+
+h1,label, p, h3, input{
+font-family: "Times New Roman", Times, serif;
+}
+
+p, label{
+font-size: 18px;}
+.center {
+  text-align: center;
+}
+label{
+font-weight:bold;}

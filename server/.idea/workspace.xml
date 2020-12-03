@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed696a06-f1f2-4bfe-9681-2af74e040a1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/HomeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/HomeController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/MovieController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/controllers/MovieController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/filter/MovieFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/main/whattowatch/filter/MovieFilter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/whattowatch.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/WhattowatchApplicationKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter$WhenMappings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Genre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/models/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/IMovieRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/repositories/MovieRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/services/MovieService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/controllers/MovieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/filter/MovieFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/whattowatch/parser/MovieParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +53,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\barbi\Desktop\What-to-Watch\server\src\main\resources\static" />
+      <recent name="C:\Users\barbi\Desktop\What-to-Watch\server\src\main\resources" />
+      <recent name="C:\Users\barbi\Desktop\What-to-Watch\server\src\main\resources\static\styles\cssandjs" />
+      <recent name="C:\Users\barbi\Desktop\What-to-Watch\server\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -125,41 +123,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607016004266" />
-    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1606968097836">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1607037966852">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606829037407" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607037966852" />
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606968097836" />
-    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1606968097834">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1607037966852">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606829037407" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607037966852" />
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606968097834" />
-    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1606968097833">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1607037966852">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606829037406" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607037966852" />
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606968097833" />
-    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1606968097835">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1607037966852">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606829037407" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607037966852" />
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606968097835" />
-    <state width="1398" height="315" key="GridCell.Tab.1.bottom" timestamp="1606840369175">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1607037798166">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607037798166" />
     <state width="1398" height="315" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606840369175" />
-    <state width="1398" height="315" key="GridCell.Tab.1.center" timestamp="1606840369174">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1607037798166">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1607037798166" />
     <state width="1398" height="315" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606840369174" />
-    <state width="1398" height="315" key="GridCell.Tab.1.left" timestamp="1606840369174">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1607037798166">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1607037798166" />
     <state width="1398" height="315" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606840369174" />
-    <state width="1398" height="315" key="GridCell.Tab.1.right" timestamp="1606840369174">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1607037798166">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1607037798166" />
     <state width="1398" height="315" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606840369174" />
     <state x="208" y="43" key="SettingsEditor" timestamp="1606836508691">
       <screen x="0" y="23" width="1440" height="877" />
