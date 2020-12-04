@@ -34,7 +34,7 @@ class MovieFilter {
         val filtered = ArrayList<Movie>()
 
         when(genre) {
-            Genre.SCIENCEFICTION -> genreString = "Science Fiction"
+            Genre.SCIENCEFICTION -> genreString = "ScienceFiction"
             Genre.COMEDY -> genreString = "Comedy"
             Genre.DOCUMENTARY -> genreString = "Documentary"
             Genre.DRAMA -> genreString = "Drama"

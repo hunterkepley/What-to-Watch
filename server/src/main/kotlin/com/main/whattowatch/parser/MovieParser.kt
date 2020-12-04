@@ -14,7 +14,7 @@ class MovieParser {
     fun parseMovies() {
         println("\nparsing movies...")
 
-        var filePath = "movies/movies_metadata.csv"
+        var filePath = "movies/movies_fixed.csv"
 
         // Read movie metadata CSV and save each line in list
         try{
