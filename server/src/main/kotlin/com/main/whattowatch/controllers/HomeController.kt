@@ -74,7 +74,7 @@ class HomeController {
     @RequestMapping("",  method = arrayOf(RequestMethod.POST))
     public fun processForm(@RequestParam selectYear : String, selectGenre: Genre): String {
         if(selectYear == "<2000"){
-            if(selectGenre != Genre.SCIENCEFICTION){
+
             var randomYear = (0..yearsBefore2000.size -1).random()
             var selectedYear = yearsBefore2000[randomYear]
             var filteredMovies = filter.filterByYear(filter.filterByGenre(movieService.getAllMovies(), selectGenre), selectedYear)
@@ -92,12 +92,8 @@ class HomeController {
 
                 message1= "We Found You a Movie!! "
                 message2="Genre: $selectGenre, Year: $selectedYear"
-            }
-            else{
-                message1 = "Sorry No Movie Found for $selectGenre in $selectYear!"
-                message2 = "Try again."
 
-            }}
+            }
 
 
         else {
