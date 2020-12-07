@@ -63,8 +63,18 @@ class MovieFilter {
     }
 
     fun pickRandomMovie(movies: ArrayList<Movie>): Movie {
-        val randomMovie = (0..movies.size).random()
+        val randomMovie = (0..movies.size - 1).random()
 
+        if (movies.size == 0) { // Fixes out of bounds error when 0 movies
+            var noMovies = Movie()
+            noMovies.title = "No movies found"
+            return noMovies
+        }
         return movies[randomMovie]
     }
+    fun isNumber(s: String?): Boolean {
+        return if (s.isNullOrEmpty()) false else s.all { Character.isDigit(it) }
+    }
 }
+
+

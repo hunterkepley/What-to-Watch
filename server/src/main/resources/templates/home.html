@@ -1,19 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link th:href="@{/app.css}" rel="stylesheet">
     <title>What to Watch</title>
+
 </head>
-<body>
-<label>Choose a genre: </label>
-<select></select>
+<body style="margin-left:150px; margin-right:150px;padding-left:150px; padding-right:150px;">
 
+<br><br>
+<h1 class="center">What to Watch?</h1>
+<p class="center">Want to watch a movie but don't know <span style="font-style:italic;">what to watch?</span> <span style="color:red; font-weight:bold;">We got you!</span> Choose a genre and a year of your preference
+    and we will suggest you a movie name that matches your inputs!</p>
+
+
+<form method="post">
+    <div class="center">
+    <label>Choose a Genre </label>
+    </div>
+
+    <select name="selectGenre"  class="form-control">
+        <option   th:each="genre : ${genres}" th:text="${genre}"></option>
+
+    </select>
+
+    <br>
+    <div class="center">
+    <label>Choose a Year</label>
+    </div>
+    <select name="selectYear" class="form-control">
+        <option   th:each="year : ${years}" th:text="${year}"></option>
+
+    </select>
+
+    <br>
+    <div class="center">
+    <input type="submit" value="Get a Movie Name!" ></input>
+    </div>
+
+</form>
 <br>
-<label>Choose a year:</label>
-<select></select>
 
-<br>
+<h3 th:text="${message1}" style="color:red" class="center"></h3>
+<p th:text="${message2}" class="center"></p>
+<h1 th:text="${movieTitle}" style="font-style:italic;" class="center"></h1>
 
-<button>Get a Movie Name!</button>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
+
+
